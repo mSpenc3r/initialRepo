@@ -27,21 +27,41 @@
 <body>
             <script>
                 $('body').terminal({
-                    hello: function(what) {
+                    iam: function(what) {
                         this.echo('Hello, ' + what +
                                 '. Welcome to this terminal.');
                     },
                     displayhomework: function(homeworkNum) {
-                        if(homeworkNum == 01){
+                        switch (homeworkNum) {
+                            case 01:
+                                this.echo("http://mspenc3r.github.io/visTechSp23/homeworks/1-10/index.html");
+                                break;
+                            case 02:
+                                this.echo("some-link");
+                                break;
+                            case 03:
+                                this.echo("other-link");
+                                break;
+                            case 04:
+                                this.echo("next-link");
+                                break;
+
+                        }
+                    }
+                        
+                        
+                        
+                        
+                        /*if(homeworkNum == 01){
                             this.echo("http://google.com")
                         } else {
                     this.echo("This homework does not yet exist!")
-                    }}   
+                    }} */  
                 }, {
                     greetings: 
                     'Welcome to my VisTech homework portal!\nTo access my homework, '+
-                    'please type "displayhomework" \nfollowed by the corresponding number/week e.g. "displayhomework 01, 02"' + 
-                    'Here are a list of other commands!\nhello+name\n' 
+                    'please type "displayhomework" \nfollowed by the corresponding number/week.\ne.g. "displayhomework 01"\n' + 
+                    'Here are a list of other commands!\niam + name\n' 
                     
                 });
 
