@@ -49,6 +49,14 @@
                             case 05:
                                 this.echo("http://mspenc3r.github.io/visTechSp23/inClass-Shapes/index.html")
                         }
+                    },
+                    inclass: function(assignmentName) {
+                        if (assignmentName == "shape") {
+                            this.echo("http://mspenc3r.github.io/visTechSp23/inClass-Shapes/index.html")
+                        }
+                        else {
+                            this.echo("No in-class exercise found!")
+                        }
                     }
 
                         /*if(homeworkNum == 01){
@@ -60,7 +68,7 @@
                     greetings: 
                     'Welcome to my VisTech homework portal!\nTo access my homework, '+
                     'please type "displayhomework" \nfollowed by the corresponding number/week.\ne.g. "displayhomework 01"\n' + 
-                    'Here are a list of other commands!\niam + name\n' 
+                    'Here are a list of other commands!\niam + name\ninclass + shape' 
                     
                 });
 
