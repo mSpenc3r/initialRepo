@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>javascript</title>
+
+        <link rel="stylesheet" href="style.css">
+        <script>
+            var num = 10;
+            var name = "ARTG";
+            console.log(name);
+
+            var addition = num + 10;
+
+            num = num + 10;
+            console.log(num);
+
+            console.log(num + 10);
+
+            // Concatenation of strings of symbols
+            console.log(name + "5340");
+
+            //Boolean values: T/F, Y/N, 1 or 0
+            //check if num is bigger than another value
+            var isBigger = num > 100;
+            console.log(isBigger);
+
+            //this intializes an array called users which has 4 items
+
+            var users = ["Northeastern", 10, "ARTG5340", 100];
+
+            console.log(users[1]);
+
+            var newObj = {
+                name: "Hastings Building",
+                color: "Green",
+                street: "Huntington Ave 700",
+                zip: 02115,
+                greetings: function(name) {
+                    console.log("hey " + name + "!")
+                }
+            }
+
+            console.log(newObj.greetings("max"));
+
+            // Different types of fucntions
+
+            //A function without an input variable
+
+            var printHello = function(){
+                console.log("hello world");
+            }
+            printHello();
+
+            var printName = function(name) {
+                console.log("Hello" + name);
+            }
+            printName("Sir");
+
+            //a function with a numerical return value
+
+            var addValues = function(val1, val2) {
+                let sum = val1 + val2;
+                // This is a keyword specific to functions
+                return sum;
+            }
+
+            let myResult = addValues(10, 10);
+            console.log(myResult);
+
+            var expValues = function(val) {
+                let exp = val**2;
+                return exp;
+            }
+            var myExp = expValues(10);
+            console.log(myExp);
+
+            // Conditional Statements are if/else statements
+
+            var conditionalVal = 10;
+            if(conditionalVal < 10) {
+                console.log("this is not so bad")
+            }
+            else if (conditionalVal == 15){
+                console.log("this is bad")
+            }
+            else {
+                console.log("idk")
+            }
+
+            //Combine fucntion with conditional statements
+            var greaterThanTen = function(val) {
+                if (val > 10){
+                    console.log("yes")
+                }
+                else if (val == 10) {
+                    console.log("no")
+                }
+                else {
+                    val++;
+                    console.log(val);
+                }
+
+                return val;
+            }
+
+            var checker = greaterThanTen (100);
+            console.log(checker);
+
+
+
+            function squareRoot(val) {
+                if(isNaN(val)) {
+                    console.log("not a num")
+                }
+                else {
+                    sqrtVal = Math.sqrt(val)
+                    console.log(sqrtVal)
+                }
+            }
+            var sqNum = squareRoot(100);
+
+            function decreasingOrder(val) {
+                for(let i = val; i > 0; i--) {
+                    console.log(i);
+                }
+            }
+            decreasingOrder(10);
+            
+        </script>
+    </head>
+
+    <body>
+        <div>
+            <h1>Hello World</h1>
+        </div>
+    </body>
+    
+</html>

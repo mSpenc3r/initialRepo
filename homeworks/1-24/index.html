@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>javascript</title>
+        
+        <link rel="stylesheet" href="style.css">
+
+        <script>
+            function changeState() {
+                document.getElementsByClassName("button").style.backgroundColor = "#00000";
+            }
+        </script>
+        
+    </head>
+    <body>
+            <div>
+                <h1 id="HL">Hello</h1>
+                <button class="button" onmouseover="changeState()"></button>
+            </div>
+
+            <script>
+                document.getElementById("HL").innerHTML = "Using function to change button state";
+    
+            </script>
+    </body>
+</html>

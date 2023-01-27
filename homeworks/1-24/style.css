@@ -1,0 +1,10 @@
+.button{
+    border: 5px outset red;
+    width: 100px;
+    height: 50px;
+    color:white
+}
+.button:hover{
+    color:red;
+    border:black;
+}
