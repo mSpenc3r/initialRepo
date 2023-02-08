@@ -1,5 +1,5 @@
 html{
-    background-color: black;
+    background-color: white;
     
 }
 
@@ -29,3 +29,7 @@ span {
     width: 50%;
     padding: 10px;
 }
+div {
+    color:white;
+}
+
