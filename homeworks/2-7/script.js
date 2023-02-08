@@ -51,7 +51,7 @@ Dependents: D3, file.txt, cities-sm.csv, countrycode-sm.json
 
 // We supply this function to the d3.text() method in this way:
 
- d3.text("/homeworks/2-7/datasets/file.txt").then(parseLOG);
+ d3.text("/datasets/file.txt").then(parseLOG);
 
 
 // 2. Load a CSV file and print its content
@@ -59,7 +59,7 @@ Dependents: D3, file.txt, cities-sm.csv, countrycode-sm.json
 // The following line loads a CSV file and prints its content using
 // the same callback function as before. 
 
-sd3.csv("/homeworks/2-7/datasets/cities-sm.csv").then(parseLOG);
+d3.csv("/datasets/cities-sm.csv").then(parseLOG);
 
 // NOTE 1: In CSV files, the first row of the file is expected 
 //         to be the key/names for each data point.
@@ -91,13 +91,13 @@ sd3.csv("/homeworks/2-7/datasets/cities-sm.csv").then(parseLOG);
 
 // Loading Data from a REALTIME Public API with a fixed time period for fetching/displaying data
 
-// let urlRealTime = "https://whiteboard.datawheel.us/api/google-analytics/realtime/random";
+let urlRealTime = "https://whiteboard.datawheel.us/api/google-analytics/realtime/random";
 
-// function loadData() {
+function loadData() {
 
-    // d3.json(urlRealTime).then(parseLOG);
+    d3.json(urlRealTime).then(parseLOG);
 
-// }
+ }
 
 // setInterval(loadData, 1000);
 
