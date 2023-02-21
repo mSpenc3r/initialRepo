@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>d3js</title>
+        
+        <link rel="stylesheet" href="base.css">
+        
+        <script src="https://d3js.org/d3.v7.min.js"></script>
+    </head>
+    <body>
+        <h2>See console (it might crash your browser, beware)</h2>
+        <script>
+                  /* d3.csv("/homeworks/2-21/data/artists1.csv", function(data) {
+                for (var i = 0; i < data.length; i++) {
+                    console.log(data[i].Name);
+                    console.log(data[i].Age);
+                    console.log(data[i].Style);
+                }
+            });  */
+
+            d3.csv("/homeworks/2-21/data/artworks.csv", (d) => {
+            console.log(d)
+        });
+        </script>
+    </body>
+
+</html>
